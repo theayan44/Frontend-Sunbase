@@ -14,7 +14,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     // first check the id and password are not blank
-    if (loginId.trim().length == 0 && password.length == 0) {
+    if (loginId.trim().length == 0 || password.length == 0) {
       //if any of them not entered then show error message
       setError(true);
     } else {
